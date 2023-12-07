@@ -1,6 +1,6 @@
 import Image from "next/image";
 import universe from "public/images/universe.jpg";
-import universeFriends from "public/images/universe-friends.jpg";
+import universeFriends from "public/images/universe.jpg";
 import fixie from "public/images/fixie.jpg";
 import dev from "public/images/dev.jpg";
 import hackTeam from "public/images/hack-team.jpg";
