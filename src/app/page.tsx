@@ -6,18 +6,6 @@ import dev from "public/images/dev.jpg";
 import hackTeam from "public/images/hack-team.jpg";
 import universeRecap from "public/images/universe-recap.jpg";
 import wellbe from "public/images/wellbe.png";
-import { Suspense } from "react";
-import Link from "next/link";
-
-function Badge(props: any) {
-  return (
-    <a
-      {...props}
-      target="_blank"
-      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
-    />
-  );
-}
 
 function LinkedinSVG() {
   return (
@@ -78,7 +66,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        hey, I'm Jerson Morrow 👨🏻‍💻
+        hey, {`I'm Jerson Morrow 👨🏻‍💻`}
       </h1>
       <p className="prose prose-neutral dark:text-neutral-400 tracking-wide">
         {`I'm a Full Stack Engineer with 6 Years of Hands-On Experience `}|
@@ -158,11 +146,11 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p className="dark:text-neutral-400 tracking-wide">
-          While working with modern web technologies I'm constantly expanding my
-          knowledge in different areas of software development like AI. I like
-          the idea of making an impact in the web development community,
-          building compilers, frameworks, and tools. That's why I'm so hyped
-          about languages like Rust.
+          While working with modern web technologies {`I'm`} constantly
+          expanding my knowledge in different areas of software development like
+          AI. I like the idea of making an impact in the web development
+          community, building compilers, frameworks, and tools.{" "}
+          {`That's why I'm`} so hyped about languages like Rust.
         </p>
       </div>
       <div className="prose prose-neutral dark:text-neutral-400 tracking-wide">

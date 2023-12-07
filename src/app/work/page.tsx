@@ -44,7 +44,8 @@ export default function WorkPage() {
           <br />
           <li>
             Implemented a vertical approach to scale database performance,
-            improving the platform's ability to handle increasing data loads.
+            improving the {`platform's`} ability to handle increasing data
+            loads.
           </li>
           <br />
           <li>
@@ -113,7 +114,7 @@ export default function WorkPage() {
             Developed an algorithm to provide real-time insurance quotes based
             on historical data and external data sources. This feature bolstered
             debt life insurance product sales, translating into 90% of the
-            company's ongoing revenue.
+            {`company's`} ongoing revenue.
           </li>
           <br />
           <li>
