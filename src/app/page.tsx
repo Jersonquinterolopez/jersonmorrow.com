@@ -1,6 +1,6 @@
 import Image from "next/image";
 import universe from "public/images/universe.jpg";
-import universeFriends from "public/images/universe.jpg";
+import universeFriends from "public/images/universe-friends.jpeg";
 import fixie from "public/images/fixie.jpg";
 import dev from "public/images/dev.jpg";
 import hackTeam from "public/images/hack-team.jpg";
@@ -181,7 +181,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/Jersonquinterolopez"
+            href="https://github.com/jersonmorrow"
           >
             <GithubSVG />
           </a>
