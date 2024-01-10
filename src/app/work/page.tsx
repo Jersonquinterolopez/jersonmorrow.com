@@ -11,11 +11,10 @@ export default function WorkPage() {
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p className="dark:text-neutral-300 tracking-wide">
-          Results-Driven Full Stack Engineer with six years of experience in
-          fast-moving environments as a product engineer and senior software
-          engineer. Extensive background in design principles and UI/UX.
-          Experienced in building software architecture and development
-          strategies for startups and e-commerce companies.
+          Senior front-end engineer with six years of experience in fast-moving
+          environments. Extensive background in design principles and UI/UX.
+          Greatest strengths include building web architecture and a keen eye
+          for design systems.
         </p>
         <hr className="my-6 border-neutral-200 dark:border-neutral-700" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Jakroo</h2>
@@ -27,30 +26,20 @@ export default function WorkPage() {
           className="dark:text-neutral-300 tracking-wide"
         >
           <li>
-            Developed a comprehensive cloud system for user design folders
-            involving frontend, backend, and database development.
+            Designed and developed a comprehensive cloud storage system for user
+            designs, involving frontend, backend, and database development.
           </li>
           <br />
           <li>
-            Integrated BulkShipping feature into the checkout process and sales
+            Integrated bulk shipping feature into the checkout process and sales
             dashboard, effectively reducing shipping costs by 15% and carbon
             footprint by 10%.
           </li>
           <br />
           <li>
             Designed and built the first product comparison engine, enabling
-            users to compare multiple products within the platform.
-          </li>
-          <br />
-          <li>
-            Implemented a vertical approach to scale database performance,
-            improving the {`platform's`} ability to handle increasing data
-            loads.
-          </li>
-          <br />
-          <li>
-            Identified and implemented caching and memoization in the designer
-            dashboard to reduce data querying and increase performance.
+            users to compare multiple products simultaneously within the
+            platform.
           </li>
         </ul>
         <br />
@@ -103,23 +92,24 @@ export default function WorkPage() {
           className="dark:text-neutral-300 tracking-wide"
         >
           <li>
-            Envisioned and executed a roadmap for the company by packaging
-            features into strategic releases. As a result, the company became
-            part of the high-impact accelerator programs in LATAM including
-            Startup Chile, Latitude, and Utec ventures, as well as in Silicon
-            Valley including OnDeck ODX.
+            Created and executed a roadmap for the company while packaging
+            features into strategic releases. The successful execution of the
+            roadmap earned Figuro a place in high-impact LATAM accelerator
+            programs including Startup Chile, Latitude, and Utec ventures, as
+            well as OnDeck ODX in Silicon Valley.
           </li>
           <br />
           <li>
             Developed an algorithm to provide real-time insurance quotes based
             on historical data and external data sources. This feature bolstered
             debt life insurance product sales, translating into 90% of the
-            {`company's`} ongoing revenue.
+            {`company's`} future revenue.
           </li>
           <br />
           <li>
-            Designed front-end architecture of the user dashboard, employing
-            React, Redux, Chakra-UI, Tailwind, and Styled Components.
+            Designed front-end architecture using Atomic Design for the user
+            dashboard, employing React, Redux, Chakra-UI, Tailwind, and Styled
+            Components.
           </li>
           <br />
           <li>
@@ -141,8 +131,7 @@ export default function WorkPage() {
           <br />
           <li>
             Spearheaded the implementation of CI/CD pipelines through GitHub
-            Actions and Firebase preview channels, enabling seamless software
-            updates.
+            Actions and Firebase preview channels.
           </li>
           <br />
           <li>
@@ -159,6 +148,13 @@ export default function WorkPage() {
           style={{ listStyleType: "disc" }}
           className="dark:text-neutral-300 tracking-wide"
         >
+          <li>
+            Spearheaded UI prototyping and design for the {`company's`} website,
+            implemented an intuitive and responsive interface; followed by
+            development using Pure CSS modules, HTML, Vanilla Javascript, and
+            Node.js to ensure seamless user experience and functionality.
+          </li>
+          <br />
           <li>
             Developed a technology to improve how people connect with their
             healthcare system. Packaging healthcare knowledge into a chatbot to

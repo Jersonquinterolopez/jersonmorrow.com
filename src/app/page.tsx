@@ -66,14 +66,13 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        hey, {`I'm Jerson Morrow 👨🏻‍💻`}
+        Jerson Morrow
       </h1>
       <p className="prose prose-neutral dark:text-neutral-400 tracking-wide">
-        {`I'm a Full Stack Engineer with 6 Years of Hands-On Experience `}|
-        Product Engineer & Senior Software Engineer in Fast-Paced Environments |
-        Strong Background in Design Principles and UI/UX | Expert in Crafting
-        Software Architecture and Development Strategies for Startups and
-        E-commerce.
+        I have worked as a full-stack engineer for the majority of my career but
+        I am known most for my “superpower” in the front end. This is largely
+        due to my natural taste for design and my unique ability to always find
+        the right intersection between UI/UX and web architecture.
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
@@ -138,31 +137,31 @@ export default function Page() {
         </div>
       </div>
       <div className="prose prose-neutral dark:text-neutral-400 tracking-wide">
+        <p>My experience as a cofounder engineer at:</p>
+        <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
+          <div className="border border-neutral-200 dark:border-neutral-700 bg-slate-700 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+            <Wellbe />
+          </div>
+        </div>
         <p>
-          I spend my free time researching how technology can solve complex
-          social problems involving climate change, economic inequality,
-          education, open banking, and healthcare.
+          was pivotal for discovering my talents in front-end development. This
+          served as a launchpad for my next position at:
         </p>
+        <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
+          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+            <FiguroSVG />
+          </div>
+        </div>
+        <p>where I managed web architecture and design systems.</p>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p className="dark:text-neutral-400 tracking-wide">
           While working with modern web technologies {`I'm`} constantly
-          expanding my knowledge in different areas of software development like
-          AI. I like the idea of making an impact in the web development
-          community, building compilers, frameworks, and tools.{" "}
-          {`That's why I'm`} so hyped about languages like Rust.
+          expanding my knowledge in different areas like AI. I like the idea of
+          making an impact in the web development community, building compilers,
+          frameworks, and tools. {`That's why I'm`} so hyped about languages
+          like Rust and technologies like Web Assembly.
         </p>
-      </div>
-      <div className="prose prose-neutral dark:text-neutral-400 tracking-wide">
-        <p>I cofounded two startups during the last five years:</p>
-      </div>
-      <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <FiguroSVG />
-        </div>
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-slate-700 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <Wellbe />
-        </div>
       </div>
       <hr className="my-6 border-neutral-100 dark:border-neutral-700" />
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
