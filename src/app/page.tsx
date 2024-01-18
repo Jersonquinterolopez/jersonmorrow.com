@@ -137,10 +137,15 @@ export default function Page() {
         </div>
       </div>
       <div className="prose prose-neutral dark:text-neutral-400 tracking-wide">
-        <p>My experience as a cofounder engineer at:</p>
+        <p>My experience as a founder engineer at:</p>
         <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-slate-700 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-            <Wellbe />
+            <a
+              href="https://wellbe-web-8036a86f6fa1.herokuapp.com/"
+              target="_blank"
+            >
+              <Wellbe />
+            </a>
           </div>
         </div>
         <p>
@@ -149,18 +154,25 @@ export default function Page() {
         </p>
         <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-            <FiguroSVG />
+            <a href="https://figuro.la/" target="_blank">
+              <FiguroSVG />
+            </a>
           </div>
         </div>
-        <p>where I managed web architecture and design systems.</p>
+        <p>
+          where I managed web architecture, API rest services and design
+          systems.
+        </p>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p className="dark:text-neutral-400 tracking-wide">
-          While working with modern web technologies {`I'm`} constantly
-          expanding my knowledge in different areas like AI. I like the idea of
-          making an impact in the web development community, building compilers,
-          frameworks, and tools. {`That's why I'm`} so hyped about languages
-          like Rust and technologies like Web Assembly.
+          My journey at Figuro went beyond of my scope, where I made significant
+          contributions in product design, product managment and algorithm
+          design. I consistently sought feedback from my peers and users, to
+          refine our products. This approach left a deep sense of humility and
+          adaptability in my work ethic. My success was not just a reflection of
+          my abilities but also my commitment to continual learning and
+          improvement.
         </p>
       </div>
       <hr className="my-6 border-neutral-100 dark:border-neutral-700" />
