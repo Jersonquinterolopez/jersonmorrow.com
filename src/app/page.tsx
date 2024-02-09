@@ -6,6 +6,7 @@ import dev from "public/images/dev.jpg";
 import hackTeam from "public/images/hack-team.jpg";
 import universeRecap from "public/images/universe-recap.jpg";
 import wellbe from "public/images/wellbe.png";
+import { sanityClient } from "../../sanity.config.client";
 
 function LinkedinSVG() {
   return (
@@ -62,17 +63,50 @@ function GithubSVG() {
   );
 }
 
-export default function Page() {
+interface Record {
+  _id: string;
+  _type: string;
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  name: string;
+  role: string;
+  firstPharagraph: string;
+  imageGallery: Array<{
+    _type: string;
+    asset: {
+      _type: string;
+      _id: string;
+    };
+  }>;
+  secondPharagraph: string;
+  firstCompanyLogo: string;
+  thirdPharagraph: string;
+  SecondCompanyLogo: string;
+  fourthPharagraph: string;
+}
+type SanityQuery = Array<Record>;
+
+async function getProfile() {
+  const sanityQuery = `*[_type == "person" && name == "Jerson Morrow"]`;
+  const records = await sanityClient.fetch<SanityQuery>(sanityQuery);
+
+  if (records.length === 0) {
+    throw new Error("No records found");
+  }
+  return records[0];
+}
+
+export default async function Page() {
+  const profile = await getProfile();
+
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        Jerson Morrow
+        {profile.name}
       </h1>
       <p className="prose prose-neutral dark:text-neutral-400 tracking-wide">
-        I have worked as a full-stack engineer for the majority of my career but
-        I am known most for my “superpower” in the front end. This is largely
-        due to my natural taste for design and my unique ability to always find
-        the right intersection between UI/UX and web architecture.
+        {profile.firstPharagraph}
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
@@ -137,7 +171,7 @@ export default function Page() {
         </div>
       </div>
       <div className="prose prose-neutral dark:text-neutral-400 tracking-wide">
-        <p>My experience as a founder engineer at:</p>
+        <p>{profile.secondPharagraph}</p>
         <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-slate-700 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
             <a
@@ -148,10 +182,7 @@ export default function Page() {
             </a>
           </div>
         </div>
-        <p>
-          was pivotal for discovering my talents in front-end development. This
-          served as a launchpad for my next position at:
-        </p>
+        <p>{profile.thirdPharagraph}</p>
         <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
             <a href="https://figuro.la/" target="_blank">
@@ -159,21 +190,7 @@ export default function Page() {
             </a>
           </div>
         </div>
-        <p>
-          where I managed web architecture, API rest services and design
-          systems.
-        </p>
-      </div>
-      <div className="prose prose-neutral dark:prose-invert">
-        <p className="dark:text-neutral-400 tracking-wide">
-          My journey at Figuro went beyond of my scope, where I made significant
-          contributions in product design, product managment and algorithm
-          design. I consistently sought feedback from my peers and users, to
-          refine our products. This approach left a deep sense of humility and
-          adaptability in my work ethic. My success was not just a reflection of
-          my abilities but also my commitment to continual learning and
-          improvement.
-        </p>
+        <p>{profile.fourthPharagraph}</p>
       </div>
       <hr className="my-6 border-neutral-100 dark:border-neutral-700" />
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
