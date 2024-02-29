@@ -88,7 +88,7 @@ interface Record {
 type SanityQuery = Array<Record>;
 
 async function getProfile() {
-  const sanityQuery = `*[_type == "person" && name == "Jerson Morrow"]`;
+  const sanityQuery = `*[_type == "person" && _id == "660e8c69-102b-42e1-9e83-a96d3facde75"]`;
   const records = await sanityClient.fetch<SanityQuery>(sanityQuery);
 
   if (records.length === 0) {
