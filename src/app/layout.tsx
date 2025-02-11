@@ -4,6 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Navbar } from "@/components/nav";
 import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jersonmorrow.com"),

@@ -117,7 +117,6 @@ export default async function Page() {
             src={dev}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
-            priority
             className="rounded-lg object-cover"
           />
         </div>
@@ -125,10 +124,10 @@ export default async function Page() {
           <Image
             alt="Me at Github Unverse"
             src={universe}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover object-[-16px] sm:object-center"
+            className="rounded-lg object-cove r object-[-16px] sm:object-center"
           />
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
@@ -137,7 +136,6 @@ export default async function Page() {
             src={fixie}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
-            priority
             className="rounded-lg object-cover object-top sm:object-center"
           />
         </div>
@@ -147,7 +145,6 @@ export default async function Page() {
             src={hackTeam}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
-            priority
             className="rounded-lg object-cover"
           />
         </div>
@@ -157,7 +154,6 @@ export default async function Page() {
             src={universeRecap}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
-            priority
             className="rounded-lg object-cover"
           />
         </div>
@@ -167,24 +163,23 @@ export default async function Page() {
             src={universeFriends}
             fill
             sizes="(min-width: 768px) 213px, 33vw"
-            priority
             className="rounded-lg object-cover"
           />
         </div>
       </div>
-      <div className="prose prose-neutral dark:text-neutral-400 tracking-wide">
+      <div className="prose prose-neutral dark:text-neutral-400 tracking-wide italic">
         <p>{profile.secondPharagraph}</p>
         <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-slate-700 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          {/* <div className="border border-neutral-200 dark:border-neutral-700 bg-slate-700 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
             <a
               href="https://wellbe-web-8036a86f6fa1.herokuapp.com/"
               target="_blank"
             >
               <Wellbe />
             </a>
-          </div>
+          </div> */}
         </div>
-        <p>{profile.thirdPharagraph}</p>
+        {/* <p>{profile.thirdPharagraph}</p>
         <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
             <a href="https://figuro.la/" target="_blank">
@@ -192,7 +187,7 @@ export default async function Page() {
             </a>
           </div>
         </div>
-        <p>{profile.fourthPharagraph}</p>
+        <p>{profile.fourthPharagraph}</p> */}
       </div>
       <hr className="my-6 border-neutral-100 dark:border-neutral-700" />
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
